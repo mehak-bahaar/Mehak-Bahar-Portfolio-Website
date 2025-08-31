@@ -48,6 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/MehakIcon.png" type="image/png" />
+        {/* You can use .png if you prefer: type="image/png" */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -56,6 +60,7 @@ export default function RootLayout({
         </a>
         <NavBar />
         <main id="main-content">{children}</main>
+        <p>It&apos;s Mehak&apos;s portfolio</p>
       </body>
     </html>
   );

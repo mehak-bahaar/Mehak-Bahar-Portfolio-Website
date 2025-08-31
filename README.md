@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mehak Bahar Portfolio
 
-## Getting Started
+This is a personal portfolio website built with [Next.js](https://nextjs.org), showcasing the work, skills, and contact information of Mehak Bahar, a frontend developer.
 
-First, run the development server:
+## 🚀 Features
+
+- Responsive design for all devices
+- Projects section with live demos and source code
+- Skills section (technical & non-technical)
+- About section with profile photo
+- Contact form (powered by Formspree)
+- SEO and accessibility optimized
+- Social links (GitHub, LinkedIn, X)
+
+## 🖼️ Screenshots
+
+![Home](public/Mehak%20Bahar.jpg)
+*(Replace with actual screenshots if desired)*
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Formspree (contact form)
+- Geist font
+
+## 📦 Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/mehak-bahaar/your-repo-name.git
+cd my-portfolio
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Add your profile photo to the `public` folder as `Mehak Bahar.jpg`
+- Update project images in `public/restaurant.jpg` and `public/textutils.jpg`
+- Edit content in the components under `src/Components/`
 
-## Learn More
+## 📬 Contact
 
-To learn more about Next.js, take a look at the following resources:
+You can reach me at [mehakbahar4@gmail.com](mailto:mehakbahar4@gmail.com)  
+Or connect via [GitHub](https://github.com/mehak-bahaar), [LinkedIn](https://www.linkedin.com/in/mehak-bahar/), or [X](https://x.com/shahida89319).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy easily on [Vercel](https://vercel.com/) or your preferred platform.
 
-## Deploy on Vercel
+## 📚 Learn More
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [Formspree Documentation](https://formspree.io/docs/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Made with ❤️ by Mehak Bahar*
