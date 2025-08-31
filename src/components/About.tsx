@@ -13,7 +13,7 @@ const About: React.FC = () => {
             {/* Profile photo */}
             <div className="w-64 h-64 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-secondary to-accent/30">
               <img
-                src="/MehakBahar.jpg"
+                src="/MehakBahar.jpeg"
                 alt="Mehak Bahar"
                 className="w-full h-full object-cover"
               />
