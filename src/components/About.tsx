@@ -23,14 +23,16 @@ const About: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4 text-white">
                 Passionate about creating beautiful, functional web experiences
               </h3>
+
               <p className="mb-6">
-                I’m a frontend developer with expertise in modern JavaScript frameworks. After a brief hiatus, 
-                I’m returning to the field with renewed focus on Next.js, TypeScript, and creating performant, 
+                I&#39;m a frontend developer with expertise in modern JavaScript frameworks. After a brief hiatus,
+                I&#39;m returning to the field with renewed focus on Next.js, TypeScript, and creating performant,
                 accessible web applications.
               </p>
+
               <p className="mb-8">
-                When I’m not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or enjoying a good cup of coffee while reading about the latest web development trends. After all, I’m just a GIRL!
+                When I&#39;m not coding, you can find me exploring new technologies, contributing to open-source projects,
+                or enjoying a good cup of coffee while reading about the latest web development trends. After all, I&#39;m just a GIRL!
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -51,6 +53,7 @@ const About: React.FC = () => {
                   <p>Frontend Development</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
