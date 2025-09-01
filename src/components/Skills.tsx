@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills: React.FC = () => {
     return (
-        <section id='skills' className="scroll-mt-24 py-20 bg-primary text-text">
+        <section id='skills' className="scroll-mt-24 py-20 bg-primary text-foreground">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -28,8 +28,8 @@ const Skills: React.FC = () => {
                             { name: 'Adaptability', level: 91 },
                             { name: 'Critical Thinking', level: 87 },
                         ].map((skill, index) => (
-                            <div key={index} className="bg-background p-6 rounded-xl">
-                                <h3 className="font-bold text-white mb-3">{skill.name}</h3>
+                            <div key={index} className="bg-card p-6 rounded-xl">
+                                <h3 className="font-bold text-foreground mb-3">{skill.name}</h3>
                                 <div className="w-full bg-gray-700 rounded-full h-2.5">
                                     <div 
                                         className="bg-accent h-2.5 rounded-full" 

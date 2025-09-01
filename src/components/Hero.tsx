@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-accent">Frontend</span> Developer
           </h1>
-          <p className="text-xl md:text-2xl text-text mb-10">
+          <p className="text-xl md:text-2xl text-foreground mb-10">
             Crafting modern web experiences with React, Next.js, and TypeScript
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

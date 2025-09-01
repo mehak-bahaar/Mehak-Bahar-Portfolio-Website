@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   description: "Portfolio of Mehak Bahar, a frontend developer specializing in React, Next.js, and modern web technologies. Explore projects, skills, and contact information.",
   keywords: "Mehak Bahar, frontend developer, React, Next.js, portfolio, web developer, projects, contact",
   authors: [{ name: "Mehak Bahar", url: "https://www.linkedin.com/in/mehak-bahar/" }],
+    themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#0b0720" },
+    { media: "(prefers-color-scheme: dark)",  color: "#0b0720" },
+  ],
   openGraph: {
     title: "Mehak Bahar - Frontend Developer",
     description: "Portfolio of Mehak Bahar, a frontend developer specializing in React, Next.js, and modern web technologies.",
@@ -47,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/MehakIcon.png" type="image/png" />
         {/* You can use .png if you prefer: type="image/png" */}

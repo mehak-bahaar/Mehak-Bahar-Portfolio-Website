@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact: React.FC = () => {
     return (
-        <section id='contact' className="scroll-mt-16 py-20 bg-primary text-text">
+        <section id='contact' className="scroll-mt-16 py-20 bg-primary text-foreground">
   <div className="container mx-auto px-6">
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
