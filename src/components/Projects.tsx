@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     websiteLink: "https://restaurant-application-mu.vercel.app/",
     sourceCodeLink: "https://github.com/mehak-bahaar/restaurant-application",
     description: `Crafted a fully responsive restaurant website with React.js and Next.js to showcase menus ambiance, and contact features.`, 
-    imageSrc: "/Restaurant web.jpg",
+    imageSrc: "/RestaurantWeb.jpg",
     tags: ["React", "Next.js"]
   },
   {
