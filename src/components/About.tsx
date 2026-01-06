@@ -17,6 +17,8 @@ const About: React.FC = () => {
                 src="/MehakBahar.jpeg"
                 alt="Mehak Bahar"
                 className="w-full h-full object-cover"
+                width={256} 
+                height={256}
               />
             </div>
 
