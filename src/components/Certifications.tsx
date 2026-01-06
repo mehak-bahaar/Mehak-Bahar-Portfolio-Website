@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 // Define the data shape
@@ -44,21 +45,20 @@ const Certifications: React.FC = () => {
             >
               {/* LEFT: Image Section (Half Width) */}
               <div className="relative md:w-1/2 h-64 md:h-auto overflow-hidden border-b md:border-b-0 md:border-r border-white/5 bg-gray-900/50">
-                 {/* Overlay Link wrapper */}
-                 <a 
-                    href={cert.credentialLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 z-10 block"
+                 {/* Non-interactive overlay for visual feedback */}
+                 <div 
+                    role="presentation"
+                    aria-hidden="true"
+                    className="absolute inset-0 z-10 block pointer-events-none"
                  >
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span className="text-white font-medium border border-white px-5 py-2 rounded-full backdrop-blur-md hover:bg-white/10 transition-colors">
+                        <span className="text-white font-medium border border-white px-5 py-2 rounded-full backdrop-blur-md" aria-hidden="true">
                             View Certificate
                         </span>
                     </div>
-                 </a>
+                 </div>
 
-                <img 
+                <Image
                   src={cert.imageSrc} 
                   alt={cert.title}
                   className="w-full h-full object-contain p-4 md:p-8 group-hover:scale-105 transition-transform duration-500"

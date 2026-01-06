@@ -197,10 +197,11 @@ const Navbar: React.FC = () => {
           <li className="pt-2 border-t border-border mt-2">
             <a
               href={RESUME_LINK}
+              download
               className="block w-full text-center px-4 py-3 text-sm font-bold text-white bg-primary rounded-md hover:bg-primary/90 transition-colors"
               onClick={handleNavClick}
             >
-              Download Resume
+              Download CV
             </a>
           </li>
         </ul>

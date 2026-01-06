@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React from 'react';
 type ProjectProps = {
   title: string;
@@ -35,8 +36,11 @@ const Project = ({
         onClick={() => isLive && openLink(websiteLink)}
         tabIndex={isLive ? 0 : -1}
         role={isLive ? "button" : "article"}
-        onKeyPress={(e) => {
-          if (e.key === "Enter" && isLive) openLink(websiteLink);
+        onKeyDown={(e) => {
+          if (isLive && (e.key === "Enter" || e.key === " ")) {
+            e.preventDefault();
+            openLink(websiteLink);
+          }
         }}
       >
         
@@ -50,7 +54,7 @@ const Project = ({
             {isLive ? 'LIVE' : 'NOT LIVE'}
           </div>
 
-          <img
+          <Image
             src={imageSrc}
             alt={title}
             className={`h-full w-full object-cover transition-transform duration-200 

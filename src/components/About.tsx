@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const About: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Profile photo */}
             <div className="w-64 h-64 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-secondary to-accent/30">
-              <img
+              <Image
                 src="/MehakBahar.jpeg"
                 alt="Mehak Bahar"
                 className="w-full h-full object-cover"
