@@ -10,6 +10,9 @@ const ITEMS: Item[] = [
   { id: "contact",  label: "Contact" },
 ];
 
+// I converted your drive link to a direct download link for better UX
+const RESUME_LINK = "https://drive.google.com/uc?export=download&id=1Cf6U25yoPMbbS-A685agHF_mZiTEwp2J";
+
 const Navbar: React.FC = () => {
   const [active, setActive] = useState<string>("hero");
   const [scrolled, setScrolled] = useState(false);
@@ -78,39 +81,49 @@ const Navbar: React.FC = () => {
           {/* Brand */}
           <a href="#hero" className="font-semibold tracking-tight">
             <span className="text-primary">{"<"}</span>
-            mehak.dev
+            mehak bahar
             <span className="text-primary">{"/>"}</span>
           </a>
 
-          {/* Desktop Links */}
-          <ul className="hidden md:flex items-center gap-2">
-            {ITEMS.map((item) => {
-              const isActive = active === item.id;
-              return (
-                <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    aria-current={isActive ? "page" : undefined}
-                    className={[
-                      "relative block px-3 py-2 rounded-md transition-colors",
-                      isActive
-                        ? "text-foreground"
-                        : "text-foreground/70 hover:text-foreground",
-                    ].join(" ")}
-                  >
-                    {item.label}
-                    {/* Underline indicator */}
-                    <span
+          {/* Desktop Links Container */}
+          <div className="hidden md:flex items-center gap-6">
+            <ul className="flex items-center gap-2">
+              {ITEMS.map((item) => {
+                const isActive = active === item.id;
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      aria-current={isActive ? "page" : undefined}
                       className={[
-                        "pointer-events-none absolute left-2 right-2 -bottom-0.5 h-0.5 rounded-full bg-primary transition-all duration-300",
-                        isActive ? "opacity-100" : "opacity-0",
+                        "relative block px-3 py-2 rounded-md transition-colors",
+                        isActive
+                          ? "text-foreground"
+                          : "text-foreground/70 hover:text-foreground",
                       ].join(" ")}
-                    />
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+                    >
+                      {item.label}
+                      {/* Underline indicator */}
+                      <span
+                        className={[
+                          "pointer-events-none absolute left-2 right-2 -bottom-0.5 h-0.5 rounded-full bg-primary transition-all duration-300",
+                          isActive ? "opacity-100" : "opacity-0",
+                        ].join(" ")}
+                      />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* Resume Button (Desktop) */}
+            <a
+              href={RESUME_LINK}
+              className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-primary/90 transition-colors shadow-sm"
+            >
+              Download CV
+            </a>
+          </div>
 
           {/* Hamburger for mobile */}
           <button
@@ -147,7 +160,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div
         className={[
-          "md:hidden fixed inset-x-0 top-16 bg-surface/90 backdrop-blur transition-all duration-300 z-40",
+          "md:hidden fixed inset-x-0 top-16 bg-surface/90 backdrop-blur transition-all duration-300 z-40 border-b border-border",
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden",
         ].join(" ")}
       >
@@ -162,7 +175,7 @@ const Navbar: React.FC = () => {
                   className={[
                     "relative block px-3 py-2 rounded-md transition-colors",
                     isActive
-                      ? "text-foreground"
+                      ? "text-foreground font-medium"
                       : "text-foreground/70 hover:text-foreground",
                   ].join(" ")}
                   onClick={handleNavClick}
@@ -171,7 +184,7 @@ const Navbar: React.FC = () => {
                   {/* Underline indicator */}
                   <span
                     className={[
-                      "pointer-events-none absolute left-2 right-2 -bottom-0.5 h-0.5 rounded-full bg-primary transition-all duration-300",
+                      "pointer-events-none absolute left-2 right-auto w-4 -bottom-0.5 h-0.5 rounded-full bg-primary transition-all duration-300",
                       isActive ? "opacity-100" : "opacity-0",
                     ].join(" ")}
                   />
@@ -179,6 +192,17 @@ const Navbar: React.FC = () => {
               </li>
             );
           })}
+          
+          {/* Resume Button (Mobile) */}
+          <li className="pt-2 border-t border-border mt-2">
+            <a
+              href={RESUME_LINK}
+              className="block w-full text-center px-4 py-3 text-sm font-bold text-white bg-primary rounded-md hover:bg-primary/90 transition-colors"
+              onClick={handleNavClick}
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

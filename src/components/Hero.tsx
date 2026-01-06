@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           {/* Updated logo */}
           <div className="flex justify-center items-center mb-4">
             <span className="text-primary text-2xl font-bold tracking-tight">{"<"}</span>
-            <span className="mx-2 text-2xl font-bold tracking-tight">mehak.dev</span>
+            <span className="mx-2 text-2xl font-bold tracking-tight">mehak bahar</span>
             <span className="text-primary text-2xl font-bold tracking-tight">{"/>"}</span>
           </div>
           {/* Full name */}

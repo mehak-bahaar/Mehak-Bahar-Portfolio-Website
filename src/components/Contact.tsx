@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-medium text-white">Location</h4>
-                <p>Remote</p>
+                <p>Faisalabad, Remote</p>
               </div>
             </div>
             
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-medium text-white">Availability</h4>
-                <p>Weekends</p>
+                <p>Weekdays</p>
               </div>
             </div>
           </div>
